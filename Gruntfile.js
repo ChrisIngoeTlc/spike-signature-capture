@@ -243,6 +243,7 @@ module.exports = function (grunt) {
                     '<%= config.tmp %>/<%= config.scripts %>/app.js',
                     '<%= config.tmp %>/<%= config.scripts %>/controllers/products.js',
                     '<%= config.tmp %>/<%= config.scripts %>/controllers/productGroups.js',
+                    '<%= config.tmp %>/<%= config.scripts %>/controllers/signature.js',
                     '<%= config.tmp %>/<%= config.scripts %>/controllers/productGroup.js',
                     '<%= config.tmp %>/<%= config.scripts %>/rest/module.js',
                     '<%= config.tmp %>/<%= config.scripts %>/rest/products-api.js',

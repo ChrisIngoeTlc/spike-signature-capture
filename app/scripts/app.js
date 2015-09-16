@@ -16,6 +16,10 @@ angular.module('app', ['ui.router','productApiRest'])
                 url: '/products',
                 templateUrl: 'views/products.html',
                 controller: 'ProductsController'
+            },signature = {
+                url: '/signature?orderNumber=10001231&companyName=ABC',
+                templateUrl: 'views/signature.html',
+                controller: 'SignatureController'
             },productgroups = {
                 url: '/productgroups',
                 templateUrl: 'views/productGroups.html',
@@ -32,6 +36,7 @@ angular.module('app', ['ui.router','productApiRest'])
                 .state('default', main)
                 .state('products', products)
                 .state('productgroups', productgroups)
+                .state('signature', signature)
                 .state('productgroup', productgroup)
                 ;
 
