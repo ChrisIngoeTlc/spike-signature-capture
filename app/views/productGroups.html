@@ -1,0 +1,29 @@
+<div class="container">
+    </br>
+    <h1 class="page-header">Product Groups</h1>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Create New Product Group</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" ng-model="productGroupName" id="productGroupName" tl-on-enter="submitOrder()" value="{{productGroupName}}" placeholder="Product Group Name">      <span class="input-group-btn">
+                  <span class="input-group-btn input-group-btn-lg">
+                    <button class="btn btn-default btn-lg" type="button" id="newProductGroupButton" ng-click="submitProductGroup()">Save</button>
+                  </span>
+                    </div><!-- /input-group -->
+                </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+        </div>
+        <div class="panel-footer">
+            <p>{{ saveResult }}</p>
+        </div>
+    </div>
+    <ul class="list-group">
+        <div ng-repeat="productGroup in productGroups">
+            <a href="#/productgroup/{{productGroup.id}}" class="list-group-item">{{productGroup.name}}</a>
+        </div>
+    </ul>
+</div>

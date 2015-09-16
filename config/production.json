@@ -1,0 +1,5 @@
+{
+    "server": {
+        "productUrl": "http://svopa003.cloudapp.net:80/api/products/"
+    }
+}

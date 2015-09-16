@@ -1,0 +1,5 @@
+{
+    "server": {
+        "productUrl": "http://svdev02/api/productmaintenance/"
+    }
+}

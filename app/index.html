@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Signature Capture</title>
+    <style type="text/css"></style>
+    <meta name="description" content="">
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Product Maintenance</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#products">Products</a></li>
+                <li><a href="#productgroups">Product Groups</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div ui-view></div>
+
+<!--script src="scripts/config.js">
+</script-->
+
+<!-- build:js scripts/app.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/lodash/dist/lodash.js"></script>
+<script src="bower_components/restangular/dist/restangular.js"></script>
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+<!-- endbower -->
+<script src="scripts/config.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/products.js"></script>
+<script src="scripts/controllers/productGroups.js"></script>
+<script src="scripts/controllers/productGroup.js"></script>
+<script src="scripts/rest/module.js"></script>
+<script src="scripts/rest/products-api.js"></script>
+<script src="scripts/product-maintenance.js"></script>
+<!-- endbuild -->
+</body>
+</html>
