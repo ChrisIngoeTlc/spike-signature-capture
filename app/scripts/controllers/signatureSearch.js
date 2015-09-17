@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('app')
-    .controller('SearchController', ['$scope', 'ProductApi', function ($scope, ProductApi) {
+    .controller('SignatureSearchController', ['$scope', 'ProductApi', function ($scope, ProductApi) {
 
         //constructor
         this.initialize = function () {
@@ -10,8 +10,8 @@ angular.module('app')
 
         //retrieve the available product list
         function loadOptions() {
-            $scope.loading = true;
-            $scope.productName = '';
+            //$scope.loading = true;
+            //$scope.productName = '';
             //ProductApi.all('products').getList().then(function (results) {
             //    $scope.products = ProductApi.stripRestangular(results);
             //    $scope.loading = false;

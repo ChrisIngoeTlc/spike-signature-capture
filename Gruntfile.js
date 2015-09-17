@@ -246,7 +246,7 @@ module.exports = function (grunt) {
                     '<%= config.tmp %>/<%= config.scripts %>/controllers/signature.js',
                     '<%= config.tmp %>/<%= config.scripts %>/controllers/mainMenu.js',
                     '<%= config.tmp %>/<%= config.scripts %>/controllers/productGroup.js',
-                    '<%= config.tmp %>/<%= config.scripts %>/controllers/search.js',
+                    '<%= config.tmp %>/<%= config.scripts %>/controllers/signatureSearch.js',
                     '<%= config.tmp %>/<%= config.scripts %>/rest/module.js',
                     '<%= config.tmp %>/<%= config.scripts %>/rest/products-api.js',
                     '<%= config.tmp %>/<%= config.scripts %>/product-maintenance.js',

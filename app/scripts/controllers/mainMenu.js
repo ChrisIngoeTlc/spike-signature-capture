@@ -10,9 +10,9 @@ angular.module('app')
 
         //retrieve the available product list
         function loadOptions() {
-            $scope.saving = false;
-            $scope.loading = true;
-            $scope.productName = '';
+            //$scope.saving = false;
+            //$scope.loading = true;
+            //$scope.productName = '';
         }
 
         this.initialize();

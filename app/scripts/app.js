@@ -8,14 +8,14 @@ angular.module('app', ['ui.router','productApiRest'])
     .config(['$stateProvider', '$urlRouterProvider',
         function ($stateProvider, $urlRouterProvider) {
 
-            var main = {
+            var mainMenu = {
                 url: '/',
-                templateUrl: 'views/main.html',
+                templateUrl: 'views/mainMenu.html',
                 controller: 'MainController'
-            },search = {
-                url: '/search',
-                templateUrl: 'views/search.html',
-                controller: 'SearchController'
+            },searchSignature = {
+                url: '/searchSignature',
+                templateUrl: 'views/signatureSearch.html',
+                controller: 'SignatureSearchController'
             },products = {
                 url: '/products',
                 templateUrl: 'views/products.html',
@@ -37,10 +37,11 @@ angular.module('app', ['ui.router','productApiRest'])
 
             $stateProvider
 
-                .state('default', main)
+                .state('mainMenu', mainMenu)
                 .state('products', products)
                 .state('productgroups', productgroups)
                 .state('signature', signature)
+                .state('searchSignature', searchSignature)
                 .state('productgroup', productgroup)
                 ;
 
