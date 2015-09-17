@@ -247,7 +247,8 @@ module.exports = function (grunt) {
                     '<%= config.tmp %>/<%= config.scripts %>/controllers/productGroup.js',
                     '<%= config.tmp %>/<%= config.scripts %>/rest/module.js',
                     '<%= config.tmp %>/<%= config.scripts %>/rest/products-api.js',
-                    '<%= config.tmp %>/<%= config.scripts %>/product-maintenance.js'
+                    '<%= config.tmp %>/<%= config.scripts %>/product-maintenance.js',
+                    '<%= config.tmp %>/<%= config.scripts %>/signature_pad.js'
                 ],
                 dest: '<%= config.dist %>/<%= config.scripts %>/app.js'
             }
