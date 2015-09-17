@@ -16,33 +16,18 @@ angular.module('app', ['ui.router','productApiRest'])
                 url: '/searchSignature',
                 templateUrl: 'views/signatureSearch.html',
                 controller: 'SignatureSearchController'
-            },products = {
-                url: '/products',
-                templateUrl: 'views/products.html',
-                controller: 'ProductsController'
             },signature = {
                 url: '/signature?orderNumber=10001231&companyName=ABC',
                 templateUrl: 'views/signature.html',
                 controller: 'SignatureController'
-            },productgroups = {
-                url: '/productgroups',
-                templateUrl: 'views/productGroups.html',
-                controller: 'ProductGroupsController'
-            },productgroup = {
-                url: '/productgroup/:productGroupId',
-                templateUrl: 'views/productGroup.html',
-                controller: 'ProductGroupController'
             }
             ;
 
             $stateProvider
 
                 .state('mainMenu', mainMenu)
-                .state('products', products)
-                .state('productgroups', productgroups)
                 .state('signature', signature)
                 .state('searchSignature', searchSignature)
-                .state('productgroup', productgroup)
                 ;
 
             $urlRouterProvider.otherwise('/');

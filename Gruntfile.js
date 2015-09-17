@@ -241,15 +241,11 @@ module.exports = function (grunt) {
                 src: [
                     '<%= config.tmp %>/<%= config.scripts %>/config.js',
                     '<%= config.tmp %>/<%= config.scripts %>/app.js',
-                    '<%= config.tmp %>/<%= config.scripts %>/controllers/products.js',
-                    '<%= config.tmp %>/<%= config.scripts %>/controllers/productGroups.js',
                     '<%= config.tmp %>/<%= config.scripts %>/controllers/signature.js',
                     '<%= config.tmp %>/<%= config.scripts %>/controllers/mainMenu.js',
-                    '<%= config.tmp %>/<%= config.scripts %>/controllers/productGroup.js',
                     '<%= config.tmp %>/<%= config.scripts %>/controllers/signatureSearch.js',
                     '<%= config.tmp %>/<%= config.scripts %>/rest/module.js',
                     '<%= config.tmp %>/<%= config.scripts %>/rest/products-api.js',
-                    '<%= config.tmp %>/<%= config.scripts %>/product-maintenance.js',
                     '<%= config.tmp %>/<%= config.scripts %>/signature_pad.js'
                 ],
                 dest: '<%= config.dist %>/<%= config.scripts %>/app.js'
