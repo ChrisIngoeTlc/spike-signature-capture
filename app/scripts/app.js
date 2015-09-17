@@ -10,8 +10,12 @@ angular.module('app', ['ui.router','productApiRest'])
 
             var main = {
                 url: '/',
-                templateUrl: 'views/products.html',
-                controller: 'ProductsController'
+                templateUrl: 'views/main.html',
+                controller: 'MainController'
+            },search = {
+                url: '/search',
+                templateUrl: 'views/search.html',
+                controller: 'SearchController'
             },products = {
                 url: '/products',
                 templateUrl: 'views/products.html',
